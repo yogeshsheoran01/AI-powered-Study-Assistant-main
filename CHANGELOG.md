@@ -1,104 +1,172 @@
 # 🧾 CHANGELOG
-**Project:** Study Guide & Personal Assistant  
-**Repository:** [https://github.com/GPA95/SGPA](https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main.git)
-  
-**Last Updated:** 1st February 2026
 
-### 🆕 Version 1.2.0 — Visual + Analytics + UI Refresh (January 2026)
+**Project:** AI-Powered Study Assistant  
+**Repository:** https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main
 
-#### ✨ New Features & Improvements
+**Last Updated:** 16th August 2026
+
+---
+
+## 🆕 Version 1.2.0 — Visual + Analytics + UI Refresh (January 2026)
+
+### ✨ New Features & Improvements
 
 - **Visual Explanations in Explainer**
   - Explainer responses now include a simple, sketchable diagram idea at the end of each explanation.
   - Diagrams are described in text so students can quickly draw them in notebooks during revision or exams.
 
 - **Summarizer PDF Handling Fixes**
-  - Added a stronger “short text” guard for PDF summarization.
-  - Clear warning message when extracted text is too short or likely from scanned/image-based PDFs, guiding users to try another file or paste text directly.
-  - Reduces confusing “too short to summarize” loops and improves robustness with real-world PDFs.
+  - Added a stronger short-text guard for PDF summarization.
+  - Clear warning message when extracted text is too short or likely from scanned/image-based PDFs.
+  - Improved handling of real-world PDFs and scanned documents.
 
 - **Lightweight Usage Analytics**
   - Implemented privacy-friendly interaction logging to a local CSV file.
-  - Each interaction logs timestamp, anonymous session ID, mode (Explainer / Summarizer / Quizzer), sub-mode, PDF usage flag, and prompt/response length.
-  - Enables post-hoc analysis of:
+  - Each interaction records:
+    - Timestamp
+    - Anonymous session ID
+    - Mode
+    - Sub-mode
+    - PDF usage flag
+    - Prompt length
+    - Response length
+  - Enables analysis of:
     - Total interactions
     - Approximate study sessions
     - Mode usage distribution
     - PDF-based study patterns
 
 - **Branding & UI Updates**
-  - Rebranded app in UI to **SGPA – Study Guide & Personal Assistant**.
-  - Added a custom SGPA logo and integrated it into the app header/page icon.
-  - Introduced a custom Streamlit theme (e.g., “Focus Forest” / “Modern Academic”) via `.streamlit/config.toml` for a more polished, student-friendly look.
+  - Updated the application branding to **AI-Powered Study Assistant**.
+  - Improved the application header and overall UI.
+  - Added a custom Streamlit theme for a more polished and student-friendly experience.
 
-#### 🛠️ Internal & Maintenance
+### 🛠️ Internal & Maintenance
 
-- Ensured logging is fail-safe (analytics never breaks the app if file writes fail).
-- Normalized asset paths and filenames for reliable deployment on Streamlit Cloud.
-- Cleaned up `.gitignore` and configuration files so theme and analytics behave consistently in both local and cloud environments.
+- Ensured analytics logging is fail-safe so logging errors do not break the application.
+- Normalized asset paths and filenames for reliable deployment.
+- Cleaned up `.gitignore` and configuration files.
+- Improved configuration consistency between local development and deployment environments.
 
-### Version 1.1.0 — Major Feature Update (November 2025)
+---
 
-#### ✨ New Features & Improvements
+## 🆕 Version 1.1.0 — Major Feature Update (November 2025)
 
-- **Quizzer Mode Expanded:**  
+### ✨ New Features & Improvements
+
+- **Quizzer Mode Expanded**
   - Added three sub-modes:
-    - 📝 Generate Questions: MCQ, T/F, Fill in the Blanks, Descriptive — answers collected in answer key section
-    - 📖 Solve Questions: Exam-style answers auto-adapted to marks/word limit
-    - ✅ Evaluate Answers: Automated feedback, scoring, and tips for submitted answers
-  - Answer key now shown at the end of quizzes for self-testing
+    - 📝 **Generate Questions** — MCQ, T/F, Fill in the Blanks, and Descriptive questions with an answer key.
+    - 📖 **Solve Questions** — Exam-style answers adapted to marks and word limits.
+    - ✅ **Evaluate Answers** — Automated feedback, scoring, corrections, and improvement tips.
+  - Answer keys are displayed at the end of generated quizzes.
 
-- **Context-Aware Chat:**
-  - Improved support for follow-up questions/responses using previous chat history in all modes
+- **Context-Aware Chat**
+  - Improved support for follow-up questions using previous chat history across all modes.
 
-- **Dynamic Sidebar:**  
-  - Nested radio buttons for Quizzer actions; emoji-powered UI  
-  - Clickable badge links for **GitHub Repo** and **User Help** document
+- **Dynamic Sidebar**
+  - Added nested options for Quizzer actions.
+  - Improved navigation and mode selection.
+  - Added links for the GitHub repository and user documentation.
 
-- **User Help Documentation:**  
-  - Published quick-start guide covering sample inputs, usage tips, format instructions, troubleshooting, and UI walkthrough
-  - Help doc directly accessible from sidebar
+- **User Help Documentation**
+  - Added a quick-start guide covering:
+    - Sample inputs
+    - Usage tips
+    - Input formats
+    - Troubleshooting
+    - Application walkthrough
 
-- **Refined Prompts & Outputs:**
-  - Exam-optimized summaries and answer formatting
-  - Markdown-friendly structure, answer keys, bullet points
-  - Improved adaptive answer length based on marks/word limits
+- **Refined Prompts & Outputs**
+  - Improved exam-oriented summaries.
+  - Improved answer formatting.
+  - Added Markdown-friendly responses.
+  - Improved adaptive answer length based on marks and word limits.
 
-- **UI/UX Enhancements:**
-  - Code block outputs with one-click copy capability
-  - Info banners for mode guidance and instructions
-  - Instant feedback buttons for user rating after responses
+- **UI/UX Enhancements**
+  - Improved code block outputs.
+  - Added one-click copy functionality where applicable.
+  - Added information banners for mode guidance.
+  - Added response feedback functionality.
 
-- **Performance / Stability:**
-  - Improved error/timeout handling for API rate limits
-  - Input text limits for large notes/PDFs for manageable processing
-  - Auto-clearing new chat notifications for better UX
+- **Performance & Stability**
+  - Improved API error and timeout handling.
+  - Added input limits for large notes and PDFs.
+  - Improved new-chat behavior and notifications.
 
-#### 🛠️ Other Updates
+### 🛠️ Other Updates
 
-- Streamlined code structure and modularization for maintainability
-- Optimized backend prompt logic for clarity, exam readiness, and user options
-- Foundations laid for planned features (speech, flashcards, login, notes, multi-language, etc.)
+- Streamlined project structure and modularized components.
+- Improved AI prompt logic for clearer and more exam-ready responses.
+- Improved handling of user options and input formats.
+- Added foundations for future features including speech support, flashcards, login, notes, and multilingual support.
+
+---
+
+## 🏁 Version 1.0.0 — Initial Release (October 2025)
+
+### ✅ Initial Features
+
+- 🧠 **AI Chat Modes**
+  - Explainer
+  - Summarizer
+  - Quizzer
+
+- 📄 **PDF Upload & Summarization**
+  - PyPDF2-based PDF text extraction
+  - PDF summarization using Google Gemini
+
+- 💬 **Streamlit Chat Interface**
+  - Interactive chat UI
+  - Sidebar navigation
+  - New chat/reset functionality
+
+- 🤖 **Google Gemini 2.5 Flash API**
+  - AI-powered responses
+  - Secure API integration
+
+- 🔐 **Secure API Key Handling**
+  - `.env`
+  - Streamlit secrets
+
+- 🚀 **Deployment**
+  - Deployed on Render
+
+- 🧱 **Modular Project Structure**
+  - Core modules
+  - Components
+  - Utilities
+  - Assets
 
 ---
 
-### 🏁 Version 1.0.0 — Initial Release (October 2025)
+## 🚀 Future Development
 
-#### ✅ Present Features
-- AI Chat Modes: **Explainer**, **Summarizer**, **Quizzer**
-- **PDF Upload & Summarization** (PyPDF2 + PDFPlumber)
-- **Streamlit-based Chat UI** with sidebar & new chat
-- **Gemini 2.5 Flash API** integration for AI responses
-- **Secure API key handling** using `.env` and `st.secrets`
-- **Deployed** on Streamlit Cloud
-- **Clean modular structure** (core, components, utils, assets)
+Planned improvements include:
 
-#### 🚀 Next Tasks (v1.1.0)
-- Add **speech-to-text** and **text-to-speech** support
-- Implement **multilingual explanations**
-- Add **flashcard generation** with spaced repetition
-- Enable **persistent chat memory**
-- Integrate **user login + note storage**
-- Enhance **UI/UX** and theme customization
+- 🗣️ Speech-to-text and text-to-speech
+- 🌐 Multilingual explanations
+- 🧠 Flashcard generation
+- 🔁 Spaced repetition
+- 💾 Persistent chat memory
+- 👤 User authentication
+- 📝 Personal notes and study storage
+- 📊 Student performance analytics
+- 🎨 Further UI/UX improvements
+- ☁️ Cloud-based study data storage
 
 ---
+
+## 🌐 Live Application
+
+https://ai-powered-study-assistant-main.onrender.com/
+
+---
+
+## 📂 Repository
+
+https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main
+
+---
+
+> 🚀 **AI-Powered Study Assistant — Making Learning Simpler, Smarter, and More Accessible.**
