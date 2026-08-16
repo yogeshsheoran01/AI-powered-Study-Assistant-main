@@ -10,24 +10,19 @@
 
 ---
 
-[![YouTube Demo](https://img.shields.io/badge/Watch-Demo%20Video-red?logo=youtube)](https://youtu.be/Yd0xMocB-V0)
-[![Live App](https://img.shields.io/badge/Try%20it%20Now-SGPA-success?logo=streamlit)](https://sgpai-study-buddy.streamlit.app/)
-[![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
-
----
-
 ## 🧠 **Project Overview**
 
-Students often struggle to grasp difficult topics or summarize lengthy notes.  
-**SGPA** is an AI-powered web app that acts as a **personal academic assistant**, capable of:
+Students often struggle to grasp difficult topics or summarize lengthy notes.
 
-- 🧩 Explaining complex concepts in simple terms  
-- 📄 Summarizing notes or uploaded PDFs  
-- ❓ Generating quizzes, solving exam questions, and evaluating answers
+AI-Powered Study Assistant is an AI-powered web application that acts as a personal academic assistant, capable of:
 
-Combines **Streamlit** for UI and **Gemini 2.5 Flash API** for fast, intelligent AI responses — all in a clean chat-based interface.
+🧩 Explaining complex concepts in simple terms
+📄 Summarizing notes or uploaded PDFs
+❓ Generating quizzes
+📝 Solving exam questions
+✅ Evaluating answers and providing feedback
 
-![SGPA Mobile Demo](https://github.com/user-attachments/assets/593f0b16-ebc5-4e93-b1f2-e2878c0c28a9)
+The application combines Streamlit for the user interface and Google Gemini 2.5 Flash API for fast and intelligent AI responses in a clean, chat-based interface.
 
 ---
 
@@ -100,7 +95,6 @@ SGPA/
 ## 🪜 **Workflow**
 ![SGPA Workflow](https://github.com/user-attachments/assets/2cdac27e-2ae1-4dcf-b339-3a63efcebbb3)
 ![SGPA System Architecture](https://github.com/user-attachments/assets/ae8f9a61-c84b-4ebf-9081-f139b98cf441)
-©️🖼️ Diagram Credits: [https://gitdiagram.com/](https://gitdiagram.com/)
 
 ---
 
@@ -110,7 +104,7 @@ You can keep the PDF as the detailed reference and mirror a concise, in-README g
 
 ### 1️⃣ Getting Started
 
-- Open the deployed app: `https://sgpai-study-buddy.streamlit.app/`
+- Open the deployed app: `https://ai-powered-study-assistant-main.onrender.com/`
 - Select a mode from the sidebar: **Explainer**, **Summarizer**, or **Quizzer**
 - Provide input (topic, notes, PDF, or questions) in the main chat area
 
@@ -134,8 +128,6 @@ You can keep the PDF as the detailed reference and mirror a concise, in-README g
 - Mention exam context (e.g., “for B.Tech 3rd sem OS viva”) for sharper responses.  
 - Use follow-up prompts in the same chat to refine or extend answers.  
 - Reset the chat using the “New Chat” / reset option before switching topics heavily.
-
-For full details, screenshots, and troubleshooting, refer to the PDF: [![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
 
 ---
 
@@ -180,9 +172,9 @@ For full details, screenshots, and troubleshooting, refer to the PDF: [![HelpDoc
 - You are welcome to **fork** this repository to learn from it or build your own version of SGPA.  
 - If you deploy this project publicly or create a derivative version:
   - Keep the existing license file.  
-  - Credit **“SGPA by Ammaar Ahmad Khan (GPA95)”**.  
+  - Credit **“Yogesh Sheoran”**.  
   - Include a link back to the original repo:
-    - https://github.com/GPA95/SGPA
+    - https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main
 
 For contributions, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on forking, branching, and opening pull requests.
 
@@ -190,8 +182,8 @@ For contributions, please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guideline
 
 ## 👨‍💻 Author
 
-**Ammaar Ahmad Khan**  
-- GitHub: [@GPA95](https://github.com/GPA95)
+**Yogesh Sheoran**  
+-- GitHub: [@yogeshsheoran01](https://github.com/yogeshsheoran01)
 
 🌟 If you find this repository useful, please give it a star! 🌟
 
