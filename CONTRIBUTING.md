@@ -1,7 +1,7 @@
 # Contributing to SGPA
 
 Thanks for your interest in contributing to **Study Guide & Personal Assistant**!  
-This project is maintained by **Ammaar Ahmad Khan (GPA95)** and is open to improvements, bug fixes, and documentation updates.
+This project is maintained by **yogeshsheoran** and is open to improvements, bug fixes, and documentation updates.
 
 Please read these guidelines before opening an issue or pull request.
 
@@ -105,9 +105,9 @@ PRs that do not meet these basics may be closed.
 
 - You are welcome to **fork** this project to learn or create your own version.  
 - If you deploy or publish a derivative project publicly:
-- Keep the license and attribution to **“SGPA by Ammaar Ahmad Khan (GPA95)”**.  
+- Keep the license and attribution to **“yogesh sheoran”**.  
 - Include a link back to the original repository:
- - https://github.com/GPA95/SGPA
+ - [https://github.com/GPA95/SGPA](https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main.git)
 
 ---
 
