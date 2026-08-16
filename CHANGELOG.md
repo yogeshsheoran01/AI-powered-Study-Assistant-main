@@ -1,6 +1,7 @@
 # 🧾 CHANGELOG
 **Project:** Study Guide & Personal Assistant  
-**Repository:** [GPA95/SGPA](https://github.com/GPA95/SGPA)  
+**Repository:** [https://github.com/GPA95/SGPA](https://github.com/yogeshsheoran01/AI-powered-Study-Assistant-main.git)
+  
 **Last Updated:** 1st February 2026
 
 ### 🆕 Version 1.2.0 — Visual + Analytics + UI Refresh (January 2026)
