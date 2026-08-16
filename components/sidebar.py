@@ -1,12 +1,10 @@
 import streamlit as st
 import time
+
 def sidebar_ui():
     """Sidebar with mode and Quizzer sub-mode selectors, and core controls."""
 
     st.sidebar.image("assets/sgpa_logo.png", width=50)
-
-    # API/info
-    #st.sidebar.markdown("### API Model")
 
     # Mode selection
     st.sidebar.markdown("### 🧩 Choose Mode")
@@ -29,11 +27,12 @@ def sidebar_ui():
             ],
             index=0
         )
-    
+
     # Visuals toggle
     st.sidebar.markdown("### 📊 Visuals")
     if "include_visuals" not in st.session_state:
         st.session_state.include_visuals = False
+
     st.session_state.include_visuals = st.sidebar.checkbox(
         "Include visuals when helpful",
         value=st.session_state.include_visuals
@@ -42,21 +41,13 @@ def sidebar_ui():
     # New chat button
     if st.sidebar.button("🆕 New Chat"):
         st.session_state.messages = []
-        # Success message that auto-disappears after 2 seconds
+
         success_placeholder = st.sidebar.empty()
+
         with success_placeholder.container():
             st.success("Started a new chat!")
+
         time.sleep(2)
         success_placeholder.empty()
-
-    st.sidebar.markdown(
-        """
-        [![Watch Demo](https://img.shields.io/badge/Watch-Demo%20Video-red?logo=youtube)](https://youtu.be/Yd0xMocB-V0)
-        [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/GPA95/SGPA)
-        [![HelpDoc](https://img.shields.io/badge/User%20Help-How%20to%20Use-blue?logo=google-drive)](https://drive.google.com/file/d/14NEdW6L4WC_hiqlhNBEElzJnfN60EZDa/view?usp=sharing)
-        [![Feedback](https://img.shields.io/badge/User%20Feedback-Submit%20Feedback-purple?logo=google-forms)](https://forms.gle/W48Y2TFGwe8fBMFs7)
-        """
-    )
-    st.sidebar.caption("✨ SGPA - AI Powered Study Assistant")
 
     return mode, sub_mode
